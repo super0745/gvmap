@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>300x600</title>
+    <meta name="ad.size" content="width=300,height=600" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript">
+        !function(n){n.preloadImages=function(n,o){window.IMAGES_CACHE={};var e,t,i=n.length;if(0===n.length)return void(o&&"function"==typeof o&&o());for(;e=n.pop();)t=new Image,t.onload=function(n){console.log("Loading image: ",n),window.IMAGES_CACHE[n]=this,i--,0===i&&(console.log("All images are ready..."),o&&"function"==typeof o&&o())}.bind(t,e),t.src=e},n.loadScripts=function(n,o){var e,t,i=n.length;if(0===n.length)return void(o&&"function"==typeof o&&o());for(;e=n.pop();)t=document.createElement("script"),t.defer=!0,t.onload=function(){i--,0===i&&(console.log("All scripts are ready..."),o&&"function"==typeof o&&o())},t.src=e,document.getElementsByTagName("head")[0].appendChild(t)}}(window);
+    </script>
+    <script type="text/javascript">
+        var clickTag = "https://www.audemarspiguet.com/com/zh-hant/home.html?utm_source=https%3A%2F%2Fwww.gvm.com.tw%2F&utm_campaign=Seek%20Beyond&utm_format=300X600&utm_term=CODE%2015212NB.OO.A002KB.01&utm_content=Taiwan&utm_medium=.mp4"; 
+    </script>
+</head>
+<body>
+    <div id="ad">
+        <div id="banner" class="banner">
+            <div id="video-container" class="video-container js-video-container">
+                <video id="video" class="video" autoplay playsinline webkit-playsinline muted poster="./poster.jpg">
+                    <source src="./video.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="wrapper-endframe js-wrapper-endframe">
+                <img src="./endframe.jpg" class="endframe">
+                <img src="./text.png" class="endframe">
+            </div>
+        </div>
+        
+        <div id="border" class="border full"></div>
+        <div id="clickTag" class="clickTag full"></div>
+
+        <!-- Video Controls -->
+        <div id="play-btn" class="video-controls play-btn"></div>
+        <div id="pause-btn" class="video-controls pause-btn"></div>
+        <div id="replay-btn" class="video-controls replay-btn"></div>
+        <div id="unmute-btn" class="video-controls unmute-btn"></div>
+        <div id="mute-btn" class="video-controls mute-btn"></div>
+    </div>
+    <script type="text/javascript" src="logic.js"></script>
+</body>
+</html>
